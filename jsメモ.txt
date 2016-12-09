@@ -1,78 +1,11 @@
 動画
-http://schoo.jp/class/2466/room#
+http://schoo.jp/class/2410/room
 
+window.onload：すべてのHTMLが読み込まれたときに実行
 
+background-colorのようなやつでJavascriptだと"-"（ハイフン）は入力できないので
+入力するときは「backgroundColor」のように大文字で指定する
 
-クラスは無し
-オブジェクトでオブジェクトを作る？
+addEventListener()
 
-プリミティブ型は値渡し
-・数値型
-・文字列型
-・ブーリアン型
-・null型
-・undefined型
-
-オブジェクト型は参照渡し
-
-Javascriptのオブジェクト指向
-クラスという概念が無い代わりに
-プロトタイプという概念があり、
-それを使う。
-
-オブジェクトは
-プロトタイプオブジェクト（設計図）を
-参照することができる。
-
-＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-var person = {
-	name: 'John',
-	seyHello: function(){　
-		console.log('Hello, ' + this.name + '!');
-	}
-};
-＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-var person = {
-	name: 'John',
-	sayHello: function(){
-		console.log('Hello, ' + this.name + '!');
-	}
-};
-
-
-//改良
-var Person = function(name){
-	this.name = name;
-	this.sayHello = function(){
-		console.log('Hello, ' + this.name + '!');
-	};
-};
-
-//newのイメージ
-var Person__ = function(name){
-	var o = {
-		name: name;
-		sayHello: function(){
-			console.log('Hello, ' + this.name + '!');
-		}
-	};
-	return o;
-}
-
-var j = new Person('John');　　　：newのやつは大文字で始まる
-//newのイメージ
-var j2 = Person__('John');
-
-console.log(j.name);
-＿＿＿＿＿＿
-
-・Javascriptのコードで見かける4つのthis
-１：メソッド呼び出しパターン
-２：関数呼び出しパターン
-３：コンストラクタ呼び出しパターン
-４：apply,call呼び出しパターン
-
-
-
-Javaのオブジェクト指向
-classという設計図を基に、オブジェクトを作る
+stopPropagation()
