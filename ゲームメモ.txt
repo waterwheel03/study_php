@@ -1,0 +1,16 @@
+見た動画
+http://schoo.jp/class/2429/room
+http://schoo.jp/class/2430/room
+http://schoo.jp/class/2431/room
+http://schoo.jp/class/2432/room
+
+
+time.toFixed(3)  小数点第３位まで表示
+
+Math.abs()　絶対値を返す
+
+is_numeri()　　数値判定
+
+file_put_contents()  ファイルに保存
+
+array_pop()  配列の最後の値を削除
